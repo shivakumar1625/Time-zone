@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="time-zone">
+        <h1>Time in differnt Time Zones</h1>
+        <div id="local-time">
+            <h2>Your Local Time </h2>
+            <div id="time"></div>
+            <div id="date"></div>
+        </div>
+        <div id="select-time">
+            <h2>Selected Time Zone</h2>
+            <div is="dropdown">
+            <select id="time-zone1">
+                <option value="America/New_York">New York</option>
+                    <option value="Europe/London">London</option>
+                    <option value="Asia/Kolkata">Kolkata</option>
+                    <option value="Australia/Sydney">Sydney</option>
+                    <option value="Africa/Abidjan">Abidjan</option>
+                    <option value="Asia/Tokyo">Tokyo</option>
+
+            </select>
+            </div>
+            <div id="selecttime"></div>
+            <div id="selectdate"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
